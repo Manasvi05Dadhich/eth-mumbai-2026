@@ -1,0 +1,54 @@
+# ─── Environment & Secrets ─────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ─── Node / npm / pnpm ─────────────────────────────────────────
+node_modules/
+dist/
+build/
+.cache/
+*.tsbuildinfo
+
+# ─── Foundry / Forge ───────────────────────────────────────────
+out/
+cache/
+broadcast/
+deployments/local/
+
+# ─── Noir / Barretenberg ───────────────────────────────────────
+proofs/
+target/
+*.proof
+*.vk
+
+# ─── BitGo ─────────────────────────────────────────────────────
+bitgo/data/prizes.json
+bitgo/data/*.json
+
+# ─── TypeScript ────────────────────────────────────────────────
+*.js.map
+*.d.ts.map
+
+# ─── OS ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── IDE ───────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# ─── Test / Coverage ───────────────────────────────────────────
+coverage/
+.nyc_output/
+lcov.info
+
+# ─── Logs ──────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+pnpm-debug.log*

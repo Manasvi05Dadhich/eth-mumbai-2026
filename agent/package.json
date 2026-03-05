@@ -1,0 +1,35 @@
+{
+    "name": "darkearn-agent",
+    "version": "1.0.0",
+    "description": "DarkEarn fraud detection agent — monitors reputation updates, detects Sybil attacks and wash completions, posts verification hashes on-chain via DataHaven StorageHub",
+    "type": "module",
+    "main": "dist/index.js",
+    "scripts": {
+        "dev": "tsx src/index.ts",
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "test": "tsx --test test/selfCompletion.test.ts test/cleanCompletions.test.ts test/sybilCluster.test.ts test/velocityAnomaly.test.ts test/signature.test.ts test/staleRiskParams.test.ts"
+    },
+    "dependencies": {
+        "@polkadot/api": "^14.0.0",
+        "@polkadot/types": "^14.0.0",
+        "@polkadot/util-crypto": "^13.0.0",
+        "@storagehub-sdk/core": "^0.5.0",
+        "@storagehub-sdk/msp-client": "^0.5.0",
+        "@storagehub/api-augment": "^0.2.0",
+        "@storagehub/types-bundle": "^0.2.0",
+        "dotenv": "^16.4.5",
+        "ethers": "^6.11.1",
+        "node-cron": "^3.0.3",
+        "uuid": "^9.0.1",
+        "viem": "^2.21.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.20",
+        "@types/node-cron": "^3.0.11",
+        "@types/uuid": "^9.0.8",
+        "tsx": "^4.7.1",
+        "typescript": "^5.3.3",
+        "vitest": "^4.0.18"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "name": "darkearn",
+    "version": "1.0.0",
+    "private": true,
+    "description": "DarkEarn — Privacy-first bounty platform for web3 contributors",
+    "scripts": {},
+    "dependencies": {
+        "dotenv": "^16.4.5"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.20",
+        "typescript": "^5.3.3"
+    }
+}
